@@ -1,0 +1,107 @@
+:root {
+    --background: rgb(25, 40, 54);
+    --text: white;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(25, 40, 54);
+    color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+    width: 60%;
+    text-align: center;
+}
+
+.link {
+    padding: 13px;
+}
+
+.contact-links a img {
+    transition: all 0.3s ease; /* Smooth transition for the effect */
+  }
+  
+  .contact-links a:hover img {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); /* White glow */
+    transform: scale(1.1); /* Optional: Slightly enlarge the icon on hover */
+  }
+
+.UA-link {
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.UA-link:hover {
+    cursor: pointer;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.quiz {
+    border: 2px white solid;
+    min-width: 60vw;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: var(--background);
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    max-height: 80vh; /* Set a max height for the modal */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+  }
+  
